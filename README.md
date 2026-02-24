@@ -139,9 +139,9 @@ Following DAX expression was written to add column,
 - Step 41 : The report was then published to Power BI Service.
 
 # Insights:
-
 A five pages report was created on Power BI Desktop & it was then published to Power BI Service.
 
+### [1] Overview:
 - Oppo has the most models (115) → Huawei the least (40).
 
 - All top models feature 16 GB RAM.
@@ -152,7 +152,7 @@ A five pages report was created on Power BI Desktop & it was then published to P
 
 - Most common back camera resolution: 50MP (180), with high-end 108MP only in 35 models.
 
-# Camera Resolution Insights
+### [2] Camera Resolution :
 
 Total Records: 16 mobile/tablet models.
 
@@ -199,3 +199,57 @@ Notable Patterns:
 - The Galaxy Z Fold6 and Fold5 series range from 7K–8.7K ADE, indicating Samsung’s foldable devices are priced slightly lower than Huawei’s top-tier Mate series.
 
 - Other notable models like Magic V series and Pixel 9 Pro Fold hover around 6.2K–7K ADE, placing them mid-tier in this analysis.
+
+### [2] Price Analysis : 
+Launch Price ADE:
+
+- The Mate XT 512GB leads significantly at 11.10K ADE, followed closely by Mate XT 256GB at 10.50K. Huawei's Mate series dominates the top spots, suggesting a premium flagship lineup strategy.
+  
+Huawei — 4.15K leads the entire market. This is driven by the Mate XT series (10.5K–11.1K) and multiple Mate X variants, showing a bold bet on ultra-premium foldables and flagship devices.
+
+Sony — 4.03K is remarkably close to Huawei despite having fewer visible models in the model chart, suggesting Sony maintains a tight, consistently high-priced portfolio with little budget dilution.
+
+Apple — 3.68K comes in third. Given Apple's global dominance in brand value, this ranking suggests the ADE currency or market region may skew toward models where Apple is slightly undercut by Sony/Huawei flagships.
+
+Launch Price INR:
+
+- In INR, Apple leads at 103.00K, overtaking Huawei (102.44K) and Sony (91.67K). This is a notable flip from the ADE view, where Huawei ranked #1 — suggesting Apple's India pricing strategy or currency conversion rates position it slightly higher in the Indian market.
+  
+- Samsung (63.61K), Xiaomi (57.26K), Honor (48.85K), Oppo (46.49K), OnePlus (45.73K), and iQOO (44.00K) are all crammed within a ~20K range — the most fiercely competitive pricing band in the Indian market. For consumers, these brands offer near-identical price points, making specs and brand perception the deciding factor.
+
+### [3] Feature v/s Price comparision : 
+- It lets you filter devices by RAM (1–16 GB) and Launch Price in PKR (15,999–631,130) to compare specs side by side — a powerful tool for value analysis across models.
+  
+- iPhone X 64GB and 256GB share identical specs — same weight (174g), screen (5.8"), processor (A11 Bionic), battery (2,716mAh), and RAM (3GB). The only difference is storage.
+  
+- iPhone XR across all three variants (64/128/256GB) is similarly identical in every spec column.
+  
+- Largest screen at 7.9 inches
+
+- Heaviest at 300.5g (nearly double the iPhone X)
+  
+- Biggest battery at 5,124mAh — almost double the iPhone X's 2,716mAh.
+
+### [4] Matrix visual using DAX:
+- iQOO: $399 → 538g (heaviest, cheapest)
+- Honor: $607 → 284g
+- Apple: $1,028 → 258g
+- Huawei: $1,112 → 222g
+- Google: $755 → 189g (lightest premium brand)
+
+📊 Brand Quadrant Summary:
+- QuadrantBrands💎 
+- Premium Heavy SpendersHuawei, 
+- Apple🎯 Value RAM ChampionsXiaomi, 
+- OnePlus, 
+- Oppo💼 Mid-Market BalancedSamsung, 
+- Google, 
+- Honor🛒 Budget AccessibleRealme, 
+- Infinix, 
+- POCO, 
+- Lenovo⚠️ 
+- Data AnomalyNokia
+- Apple & Huawei — charge premium, keep RAM lean, focus on optimization & experience
+- Xiaomi, OnePlus & Oppo — compete on raw specs per dollar, RAM-heavy strategy
+- Google — premium price but lightest devices, minimalist hardware approach
+
