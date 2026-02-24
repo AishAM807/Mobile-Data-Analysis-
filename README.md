@@ -1,6 +1,8 @@
 # Mobile Dataset Analysis 
 
-### Dashboard Link : SharePoint from Microsoft365
+### Dashboard Link : 
+
+### Data Source: SharePoint from Microsoft365
 
 ## Problem Statement
 The smartphone market includes numerous models with varying specifications and different launch prices across countries. Businesses often find it difficult to evaluate how features such as model type and camera specifications influence product value and market positioning in different regions.
@@ -23,7 +25,7 @@ This project analyzes a mobile dataset containing smartphone model names, back a
 - Step 11 : Added two slicers: Company Name and Launch Year to enable interactive filtering.
 - Step 12 : Visuals added:
 
-	- Bar Chart: Number of models by Company.
+  - Bar Chart: Number of models by Company.
 
   - Bar Chart: Average RAM by Model Name.
 
@@ -35,6 +37,9 @@ This project analyzes a mobile dataset containing smartphone model names, back a
  
  # Report Snapshot (Power BI DESKTOP)
 
+ 
+<img width="867" height="488" alt="Image" src="https://github.com/user-attachments/assets/3786eb11-60f2-46dd-bc9e-6e1abd03b66b" />
+
 
 - Step 13 : Created the second report page named "Camera Resolution Details" to provide detailed insights into smartphone camera specifications.
 - Step 14 : Added a table view displaying Company Name, Model Name, Front Camera Resolution, and Back Camera Resolution.
@@ -45,12 +50,16 @@ This project analyzes a mobile dataset containing smartphone model names, back a
  # Report Snapshot (Power BI DESKTOP)
 
 
+<img width="872" height="482" alt="Image" src="https://github.com/user-attachments/assets/a962deb4-7c5c-4ff4-905c-30660d5794ce" />
+
 - Step 17 : Created a third report page named "Price Analysis" to examine smartphone launch prices across regions.
 - Step 18 : Added two slicers: Company Name and Launch Year for interactive filtering.
 - Step 19 : Cleaned all launch price columns by:
 	    - Replace text values like PKR, INR, USD, and AED with blanks to retain only numeric values.
 	    - Changing the data type from Text to Whole Number to enable numerical calculations and comparisons.
 - Step 20 : Created a new "Conversion Factor Table" using Chat GPT to store currency conversion rates between USD, PKR, INR, AED, and CNY.
+
+<img width="249" height="107" alt="Image" src="https://github.com/user-attachments/assets/7e2a5ab5-191e-419c-8b68-467f36883702" />
 
 - Step 21 : Performed data transformation in Power Query by creating custom columns for multi-currency price conversion (PKR, INR, AED, CNY) using exchange-rate logic and a centralized conversion table.
 	    - PKR TO USD:
@@ -73,6 +82,9 @@ This project analyzes a mobile dataset containing smartphone model names, back a
  # Report Snapshot (Power BI DESKTOP)
 
 
+<img width="873" height="482" alt="Image" src="https://github.com/user-attachments/assets/bf76e9b7-e72c-41e5-af2f-96af881e5223" />
+
+
 - Step 28 : Designed a dedicated report page titled “Feature vs Price Comparison” to analyze the relationship between device specifications and pricing across multiple countries.
 - Step 29 : Integrated slicers for RAM and Launch Price to enable dynamic filtering based on product configuration and price range.
 - Step 30 : Implemented bookmark-driven currency switching within the Launch Price slicer to allow seamless comparison across USD, PKR, INR, AED, and CNY.
@@ -84,6 +96,8 @@ This project analyzes a mobile dataset containing smartphone model names, back a
  
 
  # Report Snapshot (Power BI DESKTOP)
+
+ <img width="880" height="489" alt="Image" src="https://github.com/user-attachments/assets/8b3e6e09-f1f0-4919-a645-efc424e380d9" />
 
 
 - Step 36 : Created a calculated column using the CONCATENATE DAX function to combine Company Name and Model Name into a single identifier.
@@ -113,11 +127,13 @@ Following DAX expression was written to add column,
 			SUMMERIZE Table = SUMMARIZE('Mobile Data Set', 'Mobile Data Set'[Company Name], 'Mobile Data Set'[Model Name], "Average RAM", AVERAGE('Mobile  Data Set'[RAM (GB)]), "Average USD", AVERAGE('Mobile Data Set'[Launched Price (USA)(USD)]), "Average Mobile Weight", 						  AVERAGE('Mobile Data Set'[Numerical_mobile _weight]))
 
 
+<img width="665" height="463" alt="Image" src="https://github.com/user-attachments/assets/7ddae726-ff98-4aaf-814d-cabbac02a0bb" />
+
 
 - Step 40 : Created new report view page "DAX Function" to show matrix visual. 
 
 
-Following DAX expression was written to add new table, 
+<img width="875" height="488" alt="Image" src="https://github.com/user-attachments/assets/bd302d26-75b3-4e8e-850d-79074163cae8" />
 
 
 - Step 41 : The report was then published to Power BI Service.
@@ -125,3 +141,61 @@ Following DAX expression was written to add new table,
 # Insights:
 
 A five pages report was created on Power BI Desktop & it was then published to Power BI Service.
+
+- Oppo has the most models (115) → Huawei the least (40).
+
+- All top models feature 16 GB RAM.
+
+- Highest processor variation is 3 (Pad 2 256GB).
+
+- Most common front camera resolutions: 32MP (204) and 16MP (201).
+
+- Most common back camera resolution: 50MP (180), with high-end 108MP only in 35 models.
+
+# Camera Resolution Insights
+
+Total Records: 16 mobile/tablet models.
+
+Front Camera:
+
+- Highest: 12MP (Apple iPad 10.2-inch models)
+
+- Lowest: 5MP (Honor Pad X series, Infinix models)
+
+- Most common: 8MP (7 models, mostly Oppo, Nokia, POCO)
+
+Back Camera:
+
+- Highest: 8MP + 2MP (Oppo A3x 128GB/4G 128GB and 256GB)
+
+- Standard: 8MP (majority of devices, 11 models)
+
+Brand Insights:
+
+- Oppo: 4 models, all 8MP front, back 8MP + 2MP for 3 models
+
+- Apple: 4 models, front 7–12MP, back 8MP
+
+- Honor: 2 models, front 5MP, back 8MP
+
+- Infinix: 2 models, front 5MP, back 8MP
+
+- Nokia: 1 model, front & back 8MP
+
+- POCO: 2 models, front & back 8MP
+
+Notable Patterns:
+
+- Tablets tend to have slightly lower front cameras (5–7MP) compared to smartphones (8–12MP).
+
+- Oppo models include dual back cameras for higher variants.
+
+- Apple maintains high front camera consistency for higher-end models.
+
+- The most expensive model is Mate XT 512GB at 10.1K ADE, followed by Mate XT 256GB at 10.5K ADE.
+
+- Models like Mate X2, X3, X6 all have the same average launch price of 10K ADE, showing a premium range for Huawei Mate X series.
+
+- The Galaxy Z Fold6 and Fold5 series range from 7K–8.7K ADE, indicating Samsung’s foldable devices are priced slightly lower than Huawei’s top-tier Mate series.
+
+- Other notable models like Magic V series and Pixel 9 Pro Fold hover around 6.2K–7K ADE, placing them mid-tier in this analysis.
