@@ -205,11 +205,11 @@ Launch Price ADE:
 
 - The Mate XT 512GB leads significantly at 11.10K ADE, followed closely by Mate XT 256GB at 10.50K. Huawei's Mate series dominates the top spots, suggesting a premium flagship lineup strategy.
   
-Huawei — 4.15K leads the entire market. This is driven by the Mate XT series (10.5K–11.1K) and multiple Mate X variants, showing a bold bet on ultra-premium foldables and flagship devices.
+- Huawei — 4.15K leads the entire market. This is driven by the Mate XT series (10.5K–11.1K) and multiple Mate X variants, showing a bold bet on ultra-premium foldables and flagship devices.
 
-Sony — 4.03K is remarkably close to Huawei despite having fewer visible models in the model chart, suggesting Sony maintains a tight, consistently high-priced portfolio with little budget dilution.
+- Sony — 4.03K is remarkably close to Huawei despite having fewer visible models in the model chart, suggesting Sony maintains a tight, consistently high-priced portfolio with little budget dilution.
 
-Apple — 3.68K comes in third. Given Apple's global dominance in brand value, this ranking suggests the ADE currency or market region may skew toward models where Apple is slightly undercut by Sony/Huawei flagships.
+- Apple — 3.68K comes in third. Given Apple's global dominance in brand value, this ranking suggests the ADE currency or market region may skew toward models where Apple is slightly undercut by Sony/Huawei flagships.
 
 Launch Price INR:
 
