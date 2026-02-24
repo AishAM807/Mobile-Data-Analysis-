@@ -119,3 +119,9 @@ Following DAX expression was written to add column,
 
 Following DAX expression was written to add new table, 
 
+
+- Step 41 : The report was then published to Power BI Service.
+
+# Insights:
+
+A five pages report was created on Power BI Desktop & it was then published to Power BI Service.
